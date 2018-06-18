@@ -1,0 +1,9 @@
+## Interface: 70300
+## Title: StopEndrureIt
+## Version: 0.8beta
+## Notes: for Russian
+## Author: Aleksey Petrovskiy
+## DefaultState: enabled
+## SavedVariables: DungeonInfoCollector
+
+SEI.lua

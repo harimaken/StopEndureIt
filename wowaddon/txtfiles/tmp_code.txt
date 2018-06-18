@@ -1,0 +1,54 @@
+﻿#!/usr/bin/env python
+import sys
+import requests
+import firebase_admin
+import os
+from firebase_admin import credentials
+from firebase_admin import storage
+
+
+from requests_testadapter import Resp
+
+class LocalFileAdapter(requests.adapters.HTTPAdapter):
+    def build_response_from_file(self, request):
+        file_path = request.url[7:]
+        with open(file_path, 'rb') as file:
+            buff = bytearray(os.path.getsize(file_path))
+            file.readinto(buff)
+            resp = Resp(buff)
+            r = self.build_response(request, resp)
+
+            return r
+
+    def send(self, request, stream=False, timeout=None,
+             verify=True, cert=None, proxies=None):
+
+        return self.build_response_from_file(request)
+
+
+
+
+
+requests_session = requests.session()
+requests_session.mount('file://', LocalFileAdapter())
+requests_session.get('file://dims.jpg')
+
+#image_url = sys.argv[0] #we pass the url as an argument
+#print(sys.argv[1])
+#image_url = 'https://o.aolcdn.com/images/dims?thumbnail=1200%2C630&quality=80&image_uri=https%3A%2F%2Fwww.blogcdn.com%2Fwow.joystiq.com%2Fmedia%2F2009%2F10%2Fnew-lfg-header-gfx.jpg&client=cbc79c14efcebee57402&signature=3d605f23ec034f6a96c480d670dd5024e5b9f789'
+
+image_url = 'file://dims.jpg'
+
+cred = credentials.Certificate('dungeonhelperwow-firebase-adminsdk-8usyx-48bdfad707.json')
+firebase_admin.initialize_app(cred, {
+    'storageBucket': 'dungeonhelperwow.appspot.com'
+})
+bucket = storage.bucket()
+
+image_data = requests.get(image_url).content
+blob = bucket.blob('dims.jpg')
+blob.upload_from_string(
+        image_data,
+        content_type='image/jpg'
+    )
+print(blob.public_url)

@@ -1,0 +1,25 @@
+﻿Возвращение в каражан (верхняя часть): typeIDDN=1474; idDN=1; nameDN=2; roleDN=1537285
+Возвращение в каражан (нижняя часть): typeIDDN=1475; idDN=1; nameDN=2; roleDN=1537285
+Казематы стражей: typeIDDN=1044; idDN=1; nameDN=2; roleDN=1411864
+Катакомбы Сурамара: typeIDDN=1190; idDN=1; nameDN=2; roleDN=1411863
+Квартал Звезд: typeIDDN=1318; idDN=1; nameDN=2; roleDN=1498164
+Крепость Черной Ладьи: typeIDDN=1205; idDN=1; nameDN=2; roleDN=1411859
+Логово Нелтариона: 
+Око Азшары: typeIDDN=1175; idDN=1; nameDN=2; roleDN=1498165
+Престол Триумвирата: 
+Собор Вечной Ночи: 
+Утроба душ: 
+Чаща Темного Сердца: 
+Чертоги доблести: typeIDDN=1194; idDN=1; nameDN=2; roleDN=1498166
+Штурм Аметистовой крепости: 
+
+
+" typeIDDN = " .. typeIDDN .. " dungeon ID = " .. idDN .. " nameDN " .. nameDN .. " textureDN = " .. textureDN .. " roleDN " .. roleDN
+
+Шаблон: typeIDDN=; idDN=1; nameDN=2; roleDN=
+
+РАНДОМ (утроба душ): typeIDDN=1046; idDN=1; nameDN=2; roleDN=337493
+
+
+Рейды:
+

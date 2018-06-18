@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "345471552762",
+    "firebase_url": "https://dungeonhelperwow.firebaseio.com",
+    "project_id": "dungeonhelperwow",
+    "storage_bucket": "dungeonhelperwow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345471552762:android:41e8682de2a8a39b",
+        "android_client_info": {
+          "package_name": "ru.petrovskiy.aleksey.stopendureit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345471552762-0o49q7tu53aj88afhkd338fnmt9e7iog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.petrovskiy.aleksey.stopendureit",
+            "certificate_hash": "428bc60a464a99e1ad5156288faab9f95c6e93c5"
+          }
+        },
+        {
+          "client_id": "345471552762-sm559bfqft11169j7k4850mihfq8gpfs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.petrovskiy.aleksey.stopendureit",
+            "certificate_hash": "9240747826a48f42631e8a2417e63e14f4be75fd"
+          }
+        },
+        {
+          "client_id": "345471552762-obieo8jruk6lta1pe9nlblnfjo18v4sl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXVcvNvA5VpbTSGbSydAHv4zTQ4BWgxwM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345471552762-obieo8jruk6lta1pe9nlblnfjo18v4sl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
